@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Message</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="form-container">
+    <h1>New Message</h1>
+    <form method="POST" action="/new">
+        <label for="author-name"><strong>Author Name:</strong></label>
+        <input id="author-name" name="authorName" type="text" required>
+        <br>
+        <label for="message-text"><strong>Message Text:</strong></label>
+        <input id="message-text" name="messageText" type="text" required>
+        <br>
+        <button class="button" type="submit"><strong>Submit</strong></button>
+    </form>
+    </div>
+  </body>
+</html>

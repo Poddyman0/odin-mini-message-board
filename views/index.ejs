@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Messages</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="messages-container">
+    <h1>Messages</h1>
+        <% messages.forEach(function(message) { %>
+            <div class="a-message">
+                <strong>User:</strong> <%= message.user %> <br>
+                <strong>Text:</strong> <%= message.text %> <br>
+                <strong>Date:</strong> <br>
+                <%= message.added %> <br>
+            </div>
+        <% }); %>
+    <a href="/new"><button class="button"><strong>New Message</strong></button></a>
+  </div>
+  </body>
+</html>
